@@ -6,6 +6,7 @@
 # def kiki():
 #     print(f"goood day {a}")
 # kiki()   
-def goodDay(name):
-    print("good day" + name )
+def goodDay(name, ending="thankyou"):
+    print("good day "  + name )
+    print(ending)
 goodDay("lolo")    
