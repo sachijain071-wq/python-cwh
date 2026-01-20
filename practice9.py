@@ -40,18 +40,19 @@ class Employee:
     name="kiki"
     language="python"#class attribute
 
-    def getInfo(self):
-        print(f"the language is {self.language} and the name is {self.name}")
-    @staticmethod
-    def greet():
-        print("good morning")
+    # def getInfo(self):
+    #     print(f"the language is {self.language} and the name is {self.name}")
 
-kiki=Employee()
+    def __init__(self, name, language):
+            self.name=name
+            self.language=language
+        
+
+kiki=Employee("kiki", "python")
 # kiki.language="JS"#instance attribute
 # print(kiki.name)
 # print(kiki.language)
-kiki.greet()
-kiki.getInfo()
+print(kiki.name,kiki.language)
 
 
     
