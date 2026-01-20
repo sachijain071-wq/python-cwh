@@ -2,9 +2,16 @@
 #     print("good morning " + name + surname)
 #     print(ending)
 # hye("kiki " , " jain")
-def sum(n):
-    if(n==0):
-        return 0
-    return  sum(n-1) + n
-n=int(input("enter  a number: "))
-print(sum(n))
+# def sum(n):
+#     if(n==0):
+#         return 0
+#     return  sum(n-1) + n
+# n=int(input("enter  a number: "))
+# print(sum(n))
+def pattern(n):
+    if (n==0):
+        return
+    print("*" * n)
+    pattern(n-1)
+
+(pattern(4))
