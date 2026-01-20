@@ -40,9 +40,13 @@ class Employee:
     name="kiki"
     language="python"#class attribute
 
+    def getInfo(self):
+        print(f"the language is {self.language} and the name is {self.name}")
+
 kiki=Employee()
-kiki.language="JS"#instance attribute
-print(kiki.name)
-print(kiki.language)
+# kiki.language="JS"#instance attribute
+# print(kiki.name)
+# print(kiki.language)
+kiki.getInfo()
 
     
