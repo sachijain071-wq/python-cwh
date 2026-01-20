@@ -42,11 +42,16 @@ class Employee:
 
     def getInfo(self):
         print(f"the language is {self.language} and the name is {self.name}")
+    @staticmethod
+    def greet():
+        print("good morning")
 
 kiki=Employee()
 # kiki.language="JS"#instance attribute
 # print(kiki.name)
 # print(kiki.language)
+kiki.greet()
 kiki.getInfo()
+
 
     
