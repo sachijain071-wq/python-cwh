@@ -38,9 +38,10 @@
 
 class Employee:
     name="kiki"
-    language="python"
+    language="python"#class attribute
 
 kiki=Employee()
+kiki.language="JS"#instance attribute
 print(kiki.name)
 print(kiki.language)
 
