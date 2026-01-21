@@ -36,23 +36,20 @@
 
 
 
-class Employee:
-    name="kiki"
-    language="python"#class attribute
+class Cal:
+    def __init__(self, n):
+        self.n=n 
 
-    # def getInfo(self):
-    #     print(f"the language is {self.language} and the name is {self.name}")
+    def square(self):
+        print(f" the square is {self.n*self.n}")
 
-    def __init__(self, name, language):
-            self.name=name
-            self.language=language
+    def cube(self):
+        print(f"the cube is {self.n*self.n*self.n}")
+
+res=Cal(4)
+res.square()
+res.cube()
         
-
-kiki=Employee("kiki", "python")
-# kiki.language="JS"#instance attribute
-# print(kiki.name)
-# print(kiki.language)
-print(kiki.name,kiki.language)
 
 
     
