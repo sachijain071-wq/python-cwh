@@ -26,9 +26,6 @@ class Cal:
         self.x=x
         self.y=y
 
-    # def value(self, length, breadth):
-    #     self.length= length
-    #     self.breadth= breadth
 
     def area(self):
         print(f"the area of rect is {self.x * self.y}")
@@ -36,7 +33,7 @@ class Cal:
     def perimeter(self):
         print(f" the perimeter of rect is {2* (self.x+ self.y)}")
 
-res=Cal(2,3)
+res=Cal(10,34)
 res.area()
 res.perimeter()
         
