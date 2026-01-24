@@ -1,9 +1,20 @@
-class Animal:
-    def eat(self):
-        print("Eating...")
+# class Animal:
+#     def eat(self):
+#         print("Eating...")
 
-class Dog(Animal):
+# class Dog(Animal):
+#     pass
+
+# d = Dog()
+# d.eat()
+
+class A:
+    def show(self):
+        print("Class A")
+
+class B(A):
     pass
 
-d = Dog()
-d.eat()
+obj = B()
+obj.show()
+
