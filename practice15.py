@@ -1,11 +1,15 @@
 # 
-class Vehicle:
-    def fuel_type(self):
-        print("Uses fuel")
+class Father:
+    def skill1(self):
+        print("Driving")
 
-class Car(Vehicle):
-    def fuel_type(self):
-        print("Uses petrol or diesel")
+class Mother:
+    def skill2(self):
+        print("Cooking")
 
-c = Car()
-c.fuel_type()
+class Child(Father, Mother):
+    pass
+
+c = Child()
+c.skill1()
+c.skill2()
