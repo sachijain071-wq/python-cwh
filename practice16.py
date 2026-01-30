@@ -1,20 +1,13 @@
-class BankAccount:
-    def __init__(self):
-        self.__balance = 0
+class Bird:
+    def fly(self):
+        print("Bird flies using wings")
 
-    def deposit(self, amount):
-        self.__balance += amount
+class Airplane:
+    def fly(self):
+        print("Airplane flies using engines")
 
-    def withdraw(self, amount):
-        if amount <= self.__balance:
-            self.__balance -= amount
-        else:
-            print("Insufficient balance")
+def make_fly(obj):
+    obj.fly()
 
-    def get_balance(self):
-        return self.__balance
-
-acc = BankAccount()
-acc.deposit(1000)
-acc.withdraw(500)
-print(acc.get_balance())
+make_fly(Bird())
+make_fly(Airplane())
